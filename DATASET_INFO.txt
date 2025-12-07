@@ -1,0 +1,47 @@
+
+DATASET INFORMATION
+
+YOUR PROJECT NOW HAS MULTIPLE DATASETS:
+
+1. ORIGINAL DATASET (Your Old Data)
+   Location: data/generated/phq9_dataset_original.csv
+   Use for: Testing with your original setup
+   
+2. REAL EMOTION DATASET
+   Location: data/real/emotion_processed.csv
+   Source: Hugging Face (dair-ai/emotion)
+   Size: Real samples from emotion detection
+   Use for: Training with real emotional text
+   
+3. REAL GOEMOTIONS DATASET
+   Location: data/real/goemotions_processed.csv
+   Source: Google Research
+   Size: Real samples from GoEmotions corpus
+   Use for: Training with large-scale real data
+   
+4. COMBINED REAL DATASET (RECOMMENDED!)
+   Location: data/combined/phq9_dataset_real_combined.csv
+   Size: Combined real samples
+   Use for: Best results (largest + most diverse)
+
+MAIN FILE:
+phq9_dataset_real.csv (in root folder)
+   This is your PRIMARY dataset
+   Uses combined real data
+   All your scripts will use this by default
+
+TO SWITCH DATASETS:
+Just copy any dataset to root folder and rename to: phq9_dataset.csv
+
+Example:
+   copy data/real/emotion_processed.csv phq9_dataset.csv
+
+YOUR SCRIPTS THAT WORK WITH THESE:
+   app_final.py - Main Streamlit app
+   step1_setup_data.py - Data preprocessing
+   step2_train_survey_model.py - Model training
+   step3_dynamic_questions.py - Question generation
+   step4_audio_models_best.py - Audio model training
+
+ALL YOUR EXISTING SCRIPTS WORK WITH REAL DATA NOW!
+    
